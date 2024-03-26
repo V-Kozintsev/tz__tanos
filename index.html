@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>СК ТАНОС</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="navigation">
+        <img class="logo" src="img/logo.png" alt="Логотип" />
+        <ul class="navigation__list">
+          <button class="closeButton hidden">X</button>
+          <li class="navigation__item modalWindowMenu" style="height: 25px">
+            Меню
+          </li>
+          <li class="navigation__item" style="height: 25px">портфолио</li>
+          <li class="navigation__item" style="height: 25px">цены</li>
+          <li class="navigation__item" style="height: 25px">схема работы</li>
+          <li class="navigation__item" style="height: 25px">отзывы</li>
+          <li class="navigation__item" style="height: 25px">контакты</li>
+          <li class="navigation__item" style="height: 25px">Гарантия</li>
+          <!-- Содержимое модального окна -->
+          <div class="modalWindow hidden">
+            <li class="modalWindow__item">УСЛУГИ</li>
+            <li class="modalWindow__item">СТАТЬИ</li>
+            <li class="modalWindow__item">ВАКАНСИИ</li>
+            <li class="modalWindow__item">ФРАНШИЗА</li>
+          </div>
+        </ul>
+        <button class="navigation__btn">Обратный звонок</button>
+        <button class="btn-with-icon">
+          <img src="img/icon-phone.png" alt="Иконка" id="movingImage" />
+        </button>
+      </nav>
+      <div class="container">
+        <div class="movingImage"></div>
+        <div class="box__contain">
+          <div class="box__text">
+            <h1 class="title__main">Ремонт под ключ от 2900 руб/м2.</h1>
+            <h2 class="title__secondary">
+              <p class="secondary__text">
+                При заказе ремонта делаем дизайн-проект в подарок
+              </p>
+              <div class="band"></div>
+            </h2>
+            <h3 class="title__third">
+              <ul class="third__contain">
+                <li class="third__text">
+                  <img
+                    class="third__icon"
+                    src="img/checked_truck.png"
+                    alt="Иконка текста"
+                  />
+                  <p>Бесплатный выезд в день обращения</p>
+                </li>
+                <li class="third__text">
+                  <img
+                    class="third__icon"
+                    src="img/guarantee.png"
+                    alt="Иконка текста"
+                  />
+                  <p>Гарантия на работу до 5 лет</p>
+                </li>
+                <li class="third__text">
+                  <img
+                    class="third__icon"
+                    src="img/time_management.png"
+                    alt="Иконка текста"
+                  />
+                  <p>Жесткое соблюдение сроков</p>
+                </li>
+              </ul>
+            </h3>
+          </div>
+          <div class="box__calculations">
+            <p class="titleFrame">Рассчитайте стоимость ремонта</p>
+            <div class="box__titleFrame-2">
+              <p class="titleFrame-2">Площадь квартиры:</p>
+              <div class="titleFrame-2__number" id="areaValue">
+                68м<sup>2</sup>
+              </div>
+            </div>
+            <div class="slider-container">
+              <input
+                type="range"
+                min="0"
+                max="150"
+                value="68"
+                class="slider"
+                id="myRange"
+              />
+            </div>
+            <div class="form-radio">
+              <p class="titleFrame-3">Тип жилья:</p>
+              <div class="form-item__three">
+                <div class="item-radio">
+                  <input
+                    type="radio"
+                    class="input-radio"
+                    id="r-one"
+                    value="Вторичное жилье"
+                    name="cheked"
+                  />
+                  <label for="r-one" class="label-radio"
+                    ><span
+                      ><img
+                        src="img/radioBtn.png"
+                        class="radio-img"
+                        alt="Image 1" /></span
+                    ><span class="form-button-radio"></span>Вторичное
+                    жилье</label
+                  >
+                  <input
+                    type="radio"
+                    class="input-radio"
+                    id="r-thow"
+                    value="Вторичное жилье"
+                    name="cheked"
+                  />
+                  <label for="r-thow" class="label-radio"
+                    ><span
+                      ><img
+                        src="img/radioBtn.png"
+                        class="radio-img"
+                        alt="Image 1" /></span
+                    ><span class="form-button-radio"></span>Новостройка</label
+                  >
+                  <input
+                    type="radio"
+                    class="input-radio"
+                    id="r-three"
+                    value="Вторичное жилье"
+                    name="cheked"
+                  />
+                  <label for="r-three" class="label-radio"
+                    ><span
+                      ><img
+                        src="img/radioBtn.png"
+                        class="radio-img"
+                        alt="Image 1" /></span
+                    ><span class="form-button-radio"></span>Офис</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="form-radio-2">
+              <p class="titleFrame-secondary">Кол-во комнат:</p>
+              <div class="form-radio_two">
+                <div class="item-radio-two">
+                  <input
+                    type="radio"
+                    class="input-radio"
+                    id="rt-one"
+                    value="Вторичное жилье"
+                    name="cheked-two"
+                  />
+                  <label for="rt-one" class="label-radio"
+                    ><span
+                      ><img
+                        src="img/radioBtn.png"
+                        class="radio-img"
+                        alt="Image 1" /></span
+                    ><span class="form-button-radio"></span>1</label
+                  >
+                  <input
+                    type="radio"
+                    class="input-radio"
+                    id="rt-two"
+                    value="Вторичное жилье"
+                    name="cheked-two"
+                  />
+                  <label for="rt-two" class="label-radio"
+                    ><span
+                      ><img
+                        src="img/radioBtn.png"
+                        class="radio-img"
+                        alt="Image 1" /></span
+                    ><span class="form-button-radio"></span>2</label
+                  >
+                  <input
+                    type="radio"
+                    class="input-radio"
+                    id="rt-three"
+                    value="Вторичное жилье"
+                    name="cheked-two"
+                  />
+                  <label for="rt-three" class="label-radio"
+                    ><span
+                      ><img
+                        src="img/radioBtn.png"
+                        class="radio-img"
+                        alt="Image 1" /></span
+                    ><span class="form-button-radio"></span>3+</label
+                  >
+                  <input
+                    type="radio"
+                    class="input-radio"
+                    id="rt-four"
+                    value="Вторичное жилье"
+                    name="cheked-two"
+                  />
+                  <label for="rt-four" class="label-radio"
+                    ><span
+                      ><img
+                        src="img/radioBtn.png"
+                        class="radio-img"
+                        alt="Image 1" /></span
+                    ><span class="form-button-radio"></span>Студия</label
+                  >
+                </div>
+              </div>
+            </div>
+            <button class="sand">Отправить</button>
+          </div>
+        </div>
+        <div class="form-arrow">
+          <img class="arrow" src="img/arrowdown.png" alt="" />
+          <p class="scroll">SCROLL</p>
+        </div>
+      </div>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
