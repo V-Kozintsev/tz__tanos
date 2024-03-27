@@ -203,6 +203,13 @@ p {
   position: relative;
   z-index: 5;
 }
+.third__icon {
+  width: 45px;
+  height: 36px;
+  background-size: cover; /* Растягиваем изображение так, чтобы оно полностью покрывало фоновую область */
+  background-position: center; /* Выравниваем изображение по центру области фона */
+  display: grid;
+}
 .navigation__item {
   text-decoration: none;
 }
@@ -603,6 +610,35 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   @media (max-width: 550px) {
+    .third__icon {
+      width: 50px;
+      height: 50px;
+    }
+    .third__contain {
+      display: grid;
+      font-size: 1.6rem;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3.1fr);
+      row-gap: 2rem;
+      margin-bottom: 10rem;
+    }
+
+    .third__text:last-child {
+      margin-right: 0;
+    }
+    .box__calculations {
+      height: 100%;
+    }
+    .item-radio {
+      display: grid;
+      grid-template-rows: repeat(2.1fr);
+      grid-gap: 0.5rem;
+    }
+    .item-radio-two {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0.9rem;
+    }
     .box__text {
       max-width: 32.1rem;
     }
